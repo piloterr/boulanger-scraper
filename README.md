@@ -70,7 +70,7 @@ response = requests.get(
     params={
         "query": "https://www.boulanger.com/ref/1193303",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -254,7 +254,7 @@ response = requests.get(
     params={
         "query": "aspirateur",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
